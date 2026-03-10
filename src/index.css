@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Paprika&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --primary-color: #FF1FA9;
+    --secondary-color: #751FFF;
+    --title: #666666;
+    --contrast: #1fffbc;
+    --text-base: #EAEAF0;
+    --background: #0F0F14;
+    --text-color: #CFCFE6;
+    --gradient1: linear-gradient(135deg, #FF1FA9, #751FFF);
+    --gradient2: linear-gradient(135deg, #751FFF, #1FFFBC);    
+    --font-base: ""Source Code Pro", monospace";
+    --font-title: "Paprika", system-ui;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: var(--font-base);
+text-decoration: none;
+list-style: none;
+}
+
+body {
+color: var(--text-color)
+}
+
+h1, h2, h3 {
+font-family: var(--font-title);
+}
+
+img {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+

@@ -10,7 +10,7 @@ export default function Topo() {
             <div className="topo">
                 <picture>
                     <a href="#">
-                        <img src="./LogoLoja.png" alt="" srcset="" />
+                        <img src="./let-it.gif" alt="" srcset="" />
                     </a>
                 </picture>
 
