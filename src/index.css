@@ -5,12 +5,12 @@
     --secondary-color: #751FFF;
     --title: #666666;
     --contrast: #1fffbc;
-    --text-base: #EAEAF0;
+    --text-base: #313131;
     --background: #0F0F14;
     --text-color: #CFCFE6;
     --gradient1: linear-gradient(135deg, #FF1FA9, #751FFF);
     --gradient2: linear-gradient(135deg, #751FFF, #1FFFBC);    
-    --font-base: ""Source Code Pro", monospace";
+    --font-base: "Source Code Pro", monospace;
     --font-title: "Paprika", system-ui;
 }
 
@@ -55,28 +55,32 @@ object-fit: cover;
 }
 .anuncio {
     background-color: var(--background);
-    padding: 8px, 0;
-    text-align: center;
     color: var(--text-color);
+    text-align: center;
+    padding: 8px 0;
     font-size: 14px;
     white-space: nowrap;
 }
+
 .anuncio-conteudo {
     display: inline-block;
     overflow: hidden;
+    cursor: default;
 }
+
 .anuncio-conteudo p {
     display: inline-block;
-    animation: textoCorrido 10s linear infinite;
+    animation: textoCorrido 7s linear infinite;
 }
+
 @keyframes textoCorrido {
     0% {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(0%);
+        transform: translateX(-100%);
     }
-}
+}   
 .topo {
     display: flex;
     justify-content: space-between;
@@ -94,4 +98,48 @@ object-fit: cover;
 .topo nav {
     display: flex;
     gap: 20px;
+}
+
+.topo nav a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-base);
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.topo nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: var(--contrast);
+    transition: all 0.3s ease-in;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.topo nav a:hover::after {
+    width: 100%;
+}
+
+.topo nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .topo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+    .topo picture {
+        max-width: 30px;
+    }
+    .topo nav a {
+        font-size: 12px;
+    }
 }
