@@ -24,7 +24,8 @@ list-style: none;
 }
 
 body {
-color: var(--text-color)
+color: var(--text-base);
+overflow-x: hidden;
 }
 
 h1, h2, h3 {
