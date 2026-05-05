@@ -29,16 +29,59 @@ export default function Produtos() {
 
                                         <div className='card'>
                         <div className='card-image'>
-                        <img src={sandalia2} alt="Sandália" />
+                        <img src={tamanco} alt="Tamanco" />
+                    </div>
+                        <div className='card-info'>
+                            <h3>Tamanco</h3>
+                            <p className='preco'>R$ 149,90</p>
+                            <button className='btn'>Comprar agora</button>
+                        </div>
+                    </div>
+
+                                        <div className='card'>
+                        <div className='card-image'>
+                        <img src={bolsa} alt="Bolsa" />
+                    </div>
+                        <div className='card-info'>
+                            <h3>Bolsa</h3>
+                            <p className='preco'>R$ 749,90</p>
+                            <button className='btn'>Comprar agora</button>
+                        </div>
+                    </div>
+
+                                        <div className='card'>
+                        <div className='card-image'>
+                        <img src={note} alt="note" />
+                    </div>
+                        <div className='card-info'>
+                            <h3>Porta Notebook</h3>
+                            <p className='preco'>R$ 149,90</p>
+                            <button className='btn'>Comprar agora</button>
+                        </div>
+                    </div>
+
+                                        <div className='card'>
+                        <div className='card-image'>
+                        <img src={tenis} alt="Tenis" />
+                    </div>
+                        <div className='card-info'>
+                            <h3>Tênis</h3>
+                            <p className='preco'>R$ 449,90</p>
+                            <button className='btn'>Comprar agora</button>
+                        </div>
+                    </div>
+                    
+                                        <div className='card'>
+                        <div className='card-image'>
+                        <img src={sandalia2} alt="Tamanco" />
                     </div>
                         <div className='card-info'>
                             <h3>Sandália Pink</h3>
                             <p className='preco'>R$ 249,90</p>
                             <button className='btn'>Comprar agora</button>
                         </div>
+                        
                     </div>
-
-
 
                 </div>
             </div>
